@@ -38,7 +38,7 @@ This project delivers comprehensive analysis of housing market data through four
 1. **Clone and Setup**
    ```bash
    git clone https://github.com/PRATS-gits/ai-python-minor-project.git
-   cd ai-python-mini-project
+   cd ai-python-minor-project
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\\Scripts\\activate
    ```
