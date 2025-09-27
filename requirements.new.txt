@@ -1,0 +1,46 @@
+# ========================================
+# MINI-PROJECT REQUIREMENTS - OPTIMIZED SUBSET
+# ========================================
+# Project: Data Exploration and Visualization (Housing.csv)
+# Objectives: Price ranges, AC/no-AC averages, parking-house price simulation, sqft-prefarea price gap
+# Optimized for: Compute efficiency, memory usage, scalability
+# Environment: WSL Ubuntu 24.04, Python 3.8+
+# venv Location: `/home/prats/Playground/Internships/Elewayte/mini-project/venv`
+#
+# Selection Criteria:
+# - Minimal dependencies for objectives
+# - Polars for 10x faster DataFrame ops (memory-efficient, scalable)
+# - NumPy for numerical efficiency
+# - Matplotlib/Seaborn for optimized plotting
+# - Jupyter for interactive analysis
+# - SciPy for simulations/statistics
+# ========================================
+
+# ===== CORE DATA PROCESSING (Optimized) =====
+polars>=1.33.0                 # 10x faster DataFrame operations than Pandas (memory-efficient, scalable)
+                               # Primary for CSV loading, filtering, grouping, aggregations
+numpy==2.2.6                   # Efficient numerical arrays and computations (low memory footprint)
+
+# ===== VISUALIZATION (Optimized) =====
+matplotlib==3.10.6             # High-performance plotting (vectorized, memory-efficient)
+seaborn==0.13.2                # Statistical visualization built on Matplotlib (optimized for data exploration)
+
+# ===== STATISTICAL COMPUTING =====
+scipy==1.16.2                  # Efficient statistical functions and simulations (e.g., for relationship modeling)
+
+# ===== JUPYTER ENVIRONMENT =====
+jupyter==1.1.1                 # Metapackage for Jupyter ecosystem
+jupyterlab==4.4.7              # Interactive development interface (optimized for data analysis)
+ipykernel==6.30.1              # Python kernel for execution (low overhead)
+
+# ===== UTILITIES =====
+tqdm==4.67.1                   # Progress monitoring for large datasets (minimal memory usage)
+
+# ========================================
+# USAGE NOTES:
+# - Use Polars for all data operations: import polars as pl; df = pl.read_csv('Housing.csv')
+# - For simulations: Use SciPy.stats or NumPy for compute efficiency
+# - Plots: Matplotlib/Seaborn with vectorized operations for scalability
+# - Memory: Polars lazy evaluation for large datasets
+# - Performance: Avoid Pandas; Polars handles millions of rows efficiently
+# ========================================
